@@ -2,7 +2,8 @@
 🦈 DEEP-SEA RUPTURE
 A Subterranean Combat Engine built for Campfire Seattle 2026.
 
-🕹️ LIVE DEMO: PLAY IN BROWSER
+🕹️ LIVE DEMO: PLAY IN BROWSER [https://666dhhh.github.io/MOBA-GAME---Beneath-The-Surface/]
+
 Best experienced on Chrome/Edge. Use a keyboard to hunt.
 
 The Concept: "Beneath the Surface"
