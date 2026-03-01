@@ -16,7 +16,7 @@ Controls:
 
 W / A / S / D: Move the hero across the map.
 
-B: Recall to base. Requires a 4-second channel; moving or taking damage cancels the effect.
+B: Recall to base. Requires a 3-second channel; moving or taking damage cancels the effect.
 
 2. Combat & Skills
 
