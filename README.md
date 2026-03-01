@@ -6,6 +6,32 @@ A Subterranean Combat Engine built for Campfire Seattle 2026.
 
 Best experienced on Chrome/Edge. Use a keyboard to hunt.
 
+Controls:
+
+1. Movement & Utility
+
+W / A / S / D: Move the hero across the map.
+
+B: Recall to base. Requires a 4-second channel; moving or taking damage cancels the effect.
+
+2. Combat & Skills
+
+K: Basic Attack (make sure enemies are in your attack range). Automatically targets the nearest enemy (Hero > Minion > Monster).
+
+J: Focus Tower. Forces the hero to target the enemy defensive structure when in range.
+
+I: Dash / Mobility Skill. A quick burst of movement in the current direction.
+
+L: Ultimate Ability. Unleashes a powerful, high-cooldown signature move.
+
+3. Strategy & UI
+
+P (or Click in base range): Toggle the In-Game Shop to purchase upgrades.
+
+Tab (Hold): View the Scoreboard (K/D/A, Level, Total Gold).
+
+
+
 The Concept: "Beneath the Surface"
 Most games treat the ground as a static texture. In Deep-Sea Rupture, the ground is a fragile veil.
 
@@ -29,17 +55,6 @@ Layered VFX Pipeline: A custom stack to handle real-time screen shake, particle 
 
 Modular Shop System: A base-proximity-checked inventory that handles stat scaling (ATK/HP) on the fly.
 
-Controls:
-
-WASD — Stalk.
-
-I (Dash) — Breach the gap.
-
-L (Ult) — Fracture the earth.
-
-P (Shop) — Evolve (Only available at the "Reef" / Spawn).
-
-Tab — Check the Food Chain.
 
 🚀 Developer's Note:
 The goal was to make the player feel the "weight" of the abyss. Every time the ground cracks or a dash leaves a trail of bubbles, it's a reminder that you're the one thing that doesn't belong on the surface.
