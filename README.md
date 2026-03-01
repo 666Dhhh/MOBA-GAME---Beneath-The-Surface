@@ -2,9 +2,11 @@
 🦈 DEEP CURRENT
 A Subterranean Combat Engine built for Campfire Seattle 2026.
 
-🕹️ LIVE DEMO: PLAY IN BROWSER [https://666dhhh.github.io/MOBA-GAME---Beneath-The-Surface/]
+A lightweight, 2D Top-Down Competitive Arena (MOBA) built from the ground up. 
 
-Best experienced on Chrome/Edge. Use a keyboard to hunt.
+Engine & Rendering: Powered by Vanilla JavaScript and HTML5 Canvas, featuring a high-performance frame-by-frame rendering loop.
+
+Players select unique hero roles to battle minions, jungle monsters, and enemy champions to gain experience and gold, aiming to eventually destroy the enemy's Main Core for victory.
 
 
 
@@ -31,6 +33,13 @@ L: Ultimate Ability. Unleashes a powerful, high-cooldown signature move.
 P (or Click in base range): Toggle the In-Game Shop to purchase upgrades.
 
 Tab (Hold): View the Scoreboard (K/D/A, Level, Total Gold).
+
+
+
+
+🕹️ LIVE DEMO: PLAY IN BROWSER [https://666dhhh.github.io/MOBA-GAME---Beneath-The-Surface/]
+
+Best experienced on Chrome/Edge. Use a keyboard to hunt.
 
 
 
