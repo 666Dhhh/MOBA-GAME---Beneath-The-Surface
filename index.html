@@ -77,23 +77,23 @@ const FRAME_WALK_R = 2;     // right leg (第3帧)
 const FRAME_ATTACK = 4;      // hit          (第4帧)
 const FRAME_ULT = 3;              // ultimate (第5帧)
 
-// animate update
+
 function updatePlayerAnimation(p, now) {
 
-    // first: ultimate (last for 500ms)
+    
     if (now - (p.lastUltTime || 0) < 500) {
         p.currentFrame = FRAME_ULT;
     }
-    // second: hit (last for 200ms)
+    
     else if (now - (p.lastFire || 0) < 200) {
         p.currentFrame = FRAME_ATTACK;
     }
-    // third: move (WASD)
+    
     else if (keys['w'] || keys['a'] || keys['s'] || keys['d']) {
-        // shift legs every 200ms
+        
         p.currentFrame = (Math.floor(now / 200) % 2 === 0) ? FRAME_WALK_L : FRAME_WALK_R;
     }
-    // default: standing
+    
     else {
         p.currentFrame = FRAME_IDLE;
     }
@@ -843,11 +843,17 @@ function update() {
 
 
 function handleTowerAI(now) {
-towers.forEach(t => {
-if(t.hp <= 0) return; if (t.target && (t.target.isDead || t.target.hp <= 0 || Math.hypot(t.x - t.target.x, t.y - t.target.y) > t.range)) t.target = null; if (!t.target) {
-let em = minions.find(m => m.team !== t.team && Math.hypot(m.x-t.x, m.y-t.y) <= t.range); let eh = heroes.find(h => h.team !== t.team && !h.isDead && Math.hypot(h.x-t.x, h.y-t.y) <= t.range); t.target = em || eh; }
-if(t.target && now - t.lastShot > 1000) { bullets.push({x: t.x, y: t.y, target: t.target, team: t.team, dmg: 180, isTowerShot: true}); t.lastShot = now; }
-});
+    towers.forEach(t => {
+        if(t.hp <= 0) return; 
+        if (t.target && (t.target.isDead || t.target.hp <= 0 || Math.hypot(t.x - t.target.x, t.y - t.target.y) > t.range)) t.target = null; if (!t.target) {
+            
+            let em = minions.find(m => m.team !== t.team && Math.hypot(m.x-t.x, m.y-t.y) <= t.range); 
+            let eh = heroes.find(h => h.team !== t.team && !h.isDead && Math.hypot(h.x-t.x, h.y-t.y) <= t.range); t.target = em || eh; 
+        }
+    if(t.target && now - t.lastShot > 1000) { 
+        bullets.push({x: t.x, y: t.y, target: t.target, team: t.team, dmg: 180, isTowerShot: true}); t.lastShot = now; 
+    }
+  });
 }
 
 
@@ -2082,5 +2088,6 @@ function loop() { update(); render(); requestAnimationFrame(loop); }
 </script>
 </body>
 </html>
+
 
 
