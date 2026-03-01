@@ -1,10 +1,12 @@
 
-🦈 DEEP-SEA RUPTURE
+🦈 DEEP CURRENT
 A Subterranean Combat Engine built for Campfire Seattle 2026.
 
 🕹️ LIVE DEMO: PLAY IN BROWSER [https://666dhhh.github.io/MOBA-GAME---Beneath-The-Surface/]
 
 Best experienced on Chrome/Edge. Use a keyboard to hunt.
+
+
 
 Controls:
 
@@ -32,10 +34,13 @@ Tab (Hold): View the Scoreboard (K/D/A, Level, Total Gold).
 
 
 
+
 The Concept: "Beneath the Surface"
 Most games treat the ground as a static texture. In Deep-Sea Rupture, the ground is a fragile veil.
 
 You play as a predator in a shark cowl, but you aren't just a guy in a costume—you're an abyssal force. We took the theme "Beneath the Surface" and baked it into the core combat loop: your power doesn't come from the air or the sky; it erupts from the tectonic pressure below.
+
+
 
 Key Features
 
@@ -54,6 +59,8 @@ Vanilla JS + Canvas API: Zero frameworks. No React, no Three.js. Just raw, high-
 Layered VFX Pipeline: A custom stack to handle real-time screen shake, particle physics, and alpha-blended light gradients without dropping frames.
 
 Modular Shop System: A base-proximity-checked inventory that handles stat scaling (ATK/HP) on the fly.
+
+
 
 
 🚀 Developer's Note:
