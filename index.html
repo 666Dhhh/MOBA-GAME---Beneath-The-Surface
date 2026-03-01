@@ -163,7 +163,7 @@ function pickRole(type) {
  
     requestAnimationFrame(loop);
 
-    setInterval(spawnMinions, 20000);
+    setInterval(spawnMinions, 30000);
     spawnMinions();
     document.getElementById('roleSelect').style.display = 'none';
 }
@@ -2082,12 +2082,13 @@ window.onkeyup = (e) => {
 
 window.onkeyup = (e) => keys[e.key.toLowerCase()] = false;
 
-setInterval(spawnMinions, 20000);
+setInterval(spawnMinions, 30000);
 function loop() { update(); render(); requestAnimationFrame(loop); }
 
 </script>
 </body>
 </html>
+
 
 
 
